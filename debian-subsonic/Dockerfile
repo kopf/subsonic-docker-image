@@ -30,7 +30,7 @@ RUN ln /var/subsonic/transcode/ffmpeg /var/subsonic/transcode/lame /usr/local/bi
 
 VOLUME /var/subsonic
 
-COPY debian-subsonic/startup.sh /startup.sh
+COPY startup.sh /startup.sh
 
 EXPOSE 4040
 EXPOSE 4043
