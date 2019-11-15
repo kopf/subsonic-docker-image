@@ -15,7 +15,7 @@ RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
     apt-get install --yes --no-install-recommends --no-install-suggests openjdk-7-jre-headless locales && \
     apt-get clean
 
-ENV SUBSONIC_VERSION 6.1.5
+ENV SUBSONIC_VERSION 6.1.6
 
 ADD https://s3-eu-west-1.amazonaws.com/subsonic-public/download/subsonic-$SUBSONIC_VERSION.deb /tmp/subsonic-$SUBSONIC_VERSION.deb
 RUN dpkg -i /tmp/subsonic-$SUBSONIC_VERSION.deb && rm -f /tmp/*.deb
